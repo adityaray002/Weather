@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  </head>
+  <body >
+    <div class="modal modal-tour position-static d-block bg-secondary py-5" tabindex="-1" role="dialog" id="modalTour">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content rounded-4 shadow">
+          <div class="modal-body p-5">
+            <h2 class="fw-bold mb-0 ms-5">AIR QUALITY INDEX</h2>
+    
+            <ul class="d-grid gap-4 my-5 list-unstyled">
+              <li class="d-flex ">
+                <svg class="bi text-muted flex-shrink-0" width="48" height="48"><use xlink:href="#grid-fill"></use></svg>
+                <div class="d-flex">
+                    <h5><span id='CO'>hvh</span></h5><h5 class="mb-0 ms-5">CO(Carbon Monoxide)</h5>
+                 
+                </div>
+              </li>
+              <li class="d-flex">
+                <svg class="bi text-muted flex-shrink-0" width="48" height="48"><use xlink:href="#grid-fill"></use></svg>
+                <div class="d-flex">
+                    <h5><span id="NO"></span></h5><h5 class="mb-0 ms-5">NO(Nitrogen Monoxide)</h5>
+                 
+                </div>
+              </li>
+              <li class="d-flex">
+                <svg class="bi text-muted flex-shrink-0" width="48" height="48"><use xlink:href="#grid-fill"></use></svg>
+                <div class="d-flex">
+                    <h5><span id="NO2"></span></h5><h5 class="mb-0 ms-5">NO2(Nitrogen Dioxide)</h5>
+                 
+                </div>
+              </li>
+              <li class="d-flex">
+                <svg class="bi text-muted flex-shrink-0" width="48" height="48"><use xlink:href="#grid-fill"></use></svg>
+                <div class="d-flex">
+                    <h5><span id="O3"></span></h5> <h5 class="mb-0 ms-5">O3(Ozone)</h5>
+                 
+                </div>
+              </li>
+              <li class="d-flex">
+                <svg class="bi text-muted flex-shrink-0" width="48" height="48"><use xlink:href="#grid-fill"></use></svg>
+                <div class="d-flex">
+                    <h5><span id="SO2"></span></h5><h5 class="mb-0 ms-5">SO2(Sulfur Dioxide)</h5>
+                 
+                </div>
+              </li>
+              <li class="d-flex ">
+                <svg class="bi text-warning flex-shrink-0" width="48" height="48"><use xlink:href="#bookmark-star"></use></svg>
+                <div class="d-flex">
+                    <h5><span id="PM2_5"></span></h5><h5 class="mb-0 ms-5">PM2.5(Particulate Matter)</h5>
+                  
+                </div>
+              </li>
+              <li class="d-flex">
+                <svg class="bi text-primary flex-shrink-0" width="48" height="48"><use xlink:href="#film"></use></svg>
+                <div class="d-flex">
+                    <h5><span id="PM10"></span></h5><h5 class="mb-0 ms-5">PM1O(Particulate Matter)</h5>
+                 
+                </div>
+              </li>
+              <li class="d-flex ">
+                <svg class="bi text-primary flex-shrink-0" width="48" height="48"><use xlink:href="#film"></use></svg>
+                <div class="d-flex ">
+                    <h5><span id="NH3">56</span></h5><h5 class="mb-0 ms-5">NH3(Ammonia)</h5>
+                  
+                </div>
+              </li>
+            </ul>
+            <button type="button" class="btn btn-lg btn-primary mt-1 w-100" data-bs-dismiss="modal" id="AQI"> COLOR</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <!-- <script src="index.js"></script> -->
+    <script src="./js/index2.js"></script>
+    <script src="./js/api.js"></script>
+  </body>
+</html>

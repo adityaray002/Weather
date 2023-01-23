@@ -248,3 +248,42 @@ background: linear-gradient(to right, #ffffff, #fffc00); /* W3C, IE 10+/ Edge, F
     font-size: 40px;
     font-weight: 600;
   }
+
+  /* #explore{
+      
+     display: flex;
+     float: right;
+     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    border: 3px solid green
+  } */
+
+  .heading{
+      background-color:red;
+      color: red;
+      /* display: flex;
+      justify-content: center; */
+  }
+
+
+  .button{
+      left: 40%;
+      top: 85%;
+      position: absolute;
+  }
+  button{
+     width: 30vh;
+      height: 7vh;
+     background-color: orange;
+  }
+  #explore{
+      color: white;
+    border-radius: 20px;
+    
+  }
+
+ 

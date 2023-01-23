@@ -117,9 +117,16 @@ async function getWeather(city,country){
         const weatherResponse = await fetch(config.base_url+'data/2.5/weather?q='+city+','+country+'&APPID='+config.apiKey);
         const data = await weatherResponse.json();
         console.log(data);
+        document.getElementById('explore').addEventListener('click', openExplore(data.coord.lat, data.coord.lon));
         setData(data);
     }
     
+}
+
+async function openExplore(lat, lon){
+    var link = "index2.html?lat=" + lat + "&lng=" + lon;
+    var a = document.getElementById("explore");
+    a.href = link;
 }
 
 String.prototype.replaceAt = function(index, replacement) {
